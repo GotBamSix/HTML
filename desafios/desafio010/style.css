@@ -30,10 +30,6 @@ body {
     font-family: var(--fonte-padrão);
 }
 
-p {
-    margin: 15px 0px;
-}
-
 header {
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor4));
     min-width: 150px;
@@ -99,13 +95,39 @@ main h1 {
 }
 
 main h2 {
+    color: var(--cor3);
     font-family: var(--fonte-idroid);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
 }
 
-p {
-    margin: 15px;
+main p {
+    margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor0);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main a::after {
+    content: ' 🔗';
 }
 
 main>img {
@@ -119,23 +141,54 @@ main img.pequena {
 }
 
 aside {
+    font-family: var(--fonte-padrão);
     background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.degrade {
-    background-image: linear-gradient(to right, var(--cor0), white);
-    color: var(--cor3);
+aside>ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
 }
 
-.link {
-    background-color: var(--cor1);
-    color: var(--cor4);
-    padding: 1px;
-    font-weight: bold;
-    text-decoration: none;
+div {
+    background-color: var(--cor3);
+    border-radius: 5px 5px 0px 0px;
+}
+
+aside h1 {
+    font-family: var(--fonte-padrão);
+    font-size: 1.5em;
+    padding: 5px;
+    color: white;
+}
+
+aside p {
+    font-size: 1em;
+    margin: 5px;
+}
+
+aside ul {
+    background-color: var(0);
 }
 
 footer {
     background-color: var(--cor4);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
 }
