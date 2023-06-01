@@ -35,8 +35,8 @@ span#burger:hover {
     color: black;
 }
 
-menu#itens {
-    display: block;
+menu {
+    display: none;
 }
 
 menu>ul {
